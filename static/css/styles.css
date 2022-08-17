@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+    background-color: #17287a;
+}
+
+.logo-container, .nav-links {
+    display: flex;
+}
+
+.logo-container {
+    flex: 3;
+    margin: 2.5%;
+}
+
+.logo1 a {
+    font-weight: 800;
+    font-family: 'Goldman', cursive;
+    color: rgb(59, 101, 238);
+    text-decoration: none;
+}
+
+.logo2 a {
+    font-weight: 800;
+    font-family: 'Goldman', cursive;
+    color: rgb(240, 60, 60);
+    text-decoration: none;
+}
+
+nav {
+    flex: 1;
+}
+
+.nav-links {
+    justify-content: right;
+}
+
+.nav-link a {
+    font-family: 'Audiowide', cursive;
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link {
+    font-family: 'Audiowide', cursive;
+    color: rgb(201, 53, 201);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link a:hover {
+    border-bottom: 1px solid white;
+    color: lightgray;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #24252A;
+    margin: auto;
+}
+
+.dropdown-content #full-name {
+    font-family: 'Audiowide', cursive;
+    display: block;
+    padding-top: 7%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    color:rgb(201, 53, 201);
+    text-decoration: none;
+}
+
+.dropdown-content a {
+    font-family: 'Audiowide', cursive;
+    display: block;
+    padding-top: 7%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.dropdown-content a:hover {
+    color: lightgray;
+    background-color: black;
+}
+
+.user-dropdown:hover .dropdown-content {
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.jumbotron {
+    font-family: 'Goldman', cursive;
+}
+
+.card-columns {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-title a h5 {
+    font-family: 'Philosopher', sans-serif;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.card-title a h5:hover {
+    color: rgb(133, 133, 133);
+}
+
+.card-title a:hover {
+    text-decoration: none;
+}
+
+.about-container {
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    margin: auto;
+    width: 85%;
+    align-items: center;
+    color: black;
+}
+
+#about-logo {
+    width: 50%;
+    height: auto;
+}
+
+.form-holder {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    font-family: 'Roboto Slab', serif;
+}
+
+.btn-dark {
+    width: 100%;
+    align-items: stretch;
+}
+
+.login-for-rest {
+    font-family: 'Roboto Slab', serif;
+    display: flexbox;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 85%;
+    align-items: center;
+}
+
+.footnote {
+    font-family: 'Roboto Slab', serif;
+}
+
+.reset-instructions {
+    font-family: 'Roboto Slab', serif;
+}
+
+.carousel-inner img {
+    width: 100%;
+}
+
+.carousel-caption {
+    font-family: 'Goldman', cursive;
+    font-weight: 800;
+    color: rgb(201, 53, 201);
+    font-size: xxx-large;
+}
+
+.carousel-indicators li {
+    background-color: rgb(201, 53, 201);
+}
+
+.card-deck {
+    max-width: 100%;
+    margin-bottom: 2% !important;
+    margin: auto;
+}

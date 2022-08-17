@@ -1,0 +1,57 @@
+{% extends 'hindi.html' %}
+{% comment %} {% load mathfilters %} {% endcomment %}
+
+
+{% block title %}
+    Headlines
+{% endblock %}
+
+
+{% block content %}
+{% csrf_token %}
+
+    <div class="jumbotron">
+        <center>
+            <h1>आज की खबर</h1>
+        </center>
+    </div>
+
+
+        <div class="card-columns">
+
+            {% for headline in headline_list %}
+            <div class="card">
+                {% if headline.img != '' %}
+                    <img class="card-img-top" src="{{headline.img}}" alt="article image"></a>
+                {% endif %}
+
+                <div class="card-body">
+                    
+                    <div class="card-title"> 
+                        <h1>{{headline.title}}</h1>
+                    </div>
+                    <p className="mb-8 leading-relaxed">
+                        {{headline.content}}
+                    </p>
+                    {% if headline.time_ago_str %}
+                        <p class="card-text"><small class="text-muted">published {{ headline.date}}</small></p>
+                    {% else %}
+                        <p class="card-text"><small class="text-muted">published before today</small></p>
+                    {% endif %}
+
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+
+
+        <footer class="bg-dark text-center text-white">
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2022 Copyright:
+              <a class="text-white" href="https://mdbootstrap.com/">GNDEC</a>
+            </div>
+          </footer>
+
+
+{% endblock %}
