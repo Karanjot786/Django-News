@@ -26,7 +26,7 @@ SECRET_KEY = 'f%m(qfjevzrs*c!^!wax-(7r=ghry*jm#ampx&+apq(4b)2w@k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app' , '.now.sh']
 
 
 # Application definition
@@ -119,7 +119,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
@@ -127,17 +127,3 @@ STATICFILES_DIRS = [
 ]
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
-
-# LOGIN_REDIRECT_URL = "/news"
-# LOGOUT_REDIRECT_URL = "/register/logout"
-
-#Email Settings
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_USE_TLS = True
-# EMAIL_PORT = 587
-# EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']
-# EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
-
-#Activate Django-Heroku
-# django_heroku.settings(locals())
