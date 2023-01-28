@@ -75,23 +75,13 @@ WSGI_APPLICATION = 'DjangoNews.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.pysqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.pysqlite3'),
-#     }
-# }
-
 DATABASES = {
-        'default': {
-            'ENGINE': 'djongo',
-            'NAME': 'newa',
-            'ENFORCE_SCHEMA': False,
-            'CLIENT': {
-                'host': 'mongodb+srv://karanjot786:karanjot786@cluster0.kyvrmoo.mongodb.net/newa?retryWrites=true&w=majority'
-            }  
-        }
+    'default': {
+        'ENGINE': 'django.db.backends.pysqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.pysqlite3'),
+    }
 }
+
 
 
 # Password validation
