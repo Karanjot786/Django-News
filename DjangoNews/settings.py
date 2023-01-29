@@ -77,8 +77,8 @@ WSGI_APPLICATION = 'DjangoNews.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.pysqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.pysqlite3'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
